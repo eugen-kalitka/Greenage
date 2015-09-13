@@ -1,0 +1,217 @@
+.content {
+  background: @content-background-color;
+  font-family: @headings-font;
+  margin-top: 40px;
+}
+.page-article {
+  padding: 30px;
+  position: relative;
+  &:after {
+    content: '';
+    width: 100%*(556/620);
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    border-bottom: 5px dashed @articles-divider-color;
+  }
+}
+  .content-title {
+    margin: 0;
+  }
+  .content-title-first {
+    .em-size(21, 14);
+  }
+
+  //worth
+  .content-title-first--worth {
+    margin-bottom: 7px;
+  }
+  .content-link {
+    color: @content-links-hover;
+    &:hover {
+      color: @content-links-hover;
+    }
+  }
+  .top-link {
+    margin-top: 25px;
+    display: block;
+    padding-bottom: 5px;
+  }
+  .text-minor {
+    color: @content-disabled-text;
+  }
+  .text-minor--italic {
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  .text-minor--tags {
+    padding-top: 30px;
+    margin: 0;
+  }
+  .video {
+    margin: 4px 0;
+    width: 100%;
+    height: 283px;
+    //width: 560px;
+    //height: 283px;
+  }
+
+  //elements
+  .content-title-first--elements {
+    margin: 10px 0 10px;
+  }
+  .solid-divider {
+    border-top: 1px solid @solid-divider-color;
+    margin: 26px 0;
+  }
+  .decrease-header {
+    font-family: @headings-font;
+    font-weight: 700;
+    margin: 23px 0 0;
+  }
+  .decrease-header-1 {
+    .em-size(24, 14);
+  }
+  .decrease-header-2 {
+    .em-size(21, 14);
+  }
+  .decrease-header-3 {
+    .em-size(18, 14);
+  }
+  .decrease-header-4 {
+    .em-size(15, 14);
+  }
+  .decrease-header-5 {
+    .em-size(13, 14);
+  }
+  .decrease-header-6 {
+    padding: 4px 0 6px;
+    .em-size(11, 14);
+  }
+
+  //paragraph
+  .content-title-first--paragraph {
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .text-paragraph {
+    line-height: 21px;
+    &:first-of-type {
+      margin-bottom: 20px;
+    }
+  }
+  .top-link--paragraph {
+    margin-top: 18px;
+  }
+
+  //list-types
+  .content-title-first--list-types {
+    margin-top: 18px;
+    font-weight: 600;
+  }
+  .content-title-secondary {
+    margin: 22px 0;
+    font-weight: 600;
+  }
+  .definition-list {
+    padding-left: 30px;
+  }
+    .definition-term {
+      .em-size(16, 14);
+      font-weight: 300;
+    }
+    .definition-description {
+      padding-top: 3px;
+    }
+  .ordered-list {
+    padding-left: 50px;
+  }
+    .ordered-list__item {
+      padding-bottom: 6px;
+    }
+  .content-title-secondary--unordered {
+    margin-top: 17px;
+  }
+  .unordered-list {
+    list-style: none;
+  }
+    .unordered-list__item {
+      padding-bottom: 6px;
+      padding-left: 12px;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: -10px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: @unordered-marker-bg;
+      }
+    }
+  .top-link--list {
+    margin-top: 13px;
+  }
+
+  //forms
+   .content-title-first--forms {
+     margin-top: 17px;
+     margin-bottom: 10px;
+     font-weight: 600;
+   }
+   .text-forms {
+     text-align: justify;
+     word-spacing: -0.1em;
+     line-height: 21px;
+     padding-bottom: 12px;
+     margin-bottom: 5px;
+   }
+  .text-forms--label {
+    display: block;
+    font-weight: normal;
+    padding-bottom: 5px;
+  }
+  .input {
+    background: @form-input-bg;
+    border: @form-input-border;
+    border-radius: 3px;
+    padding: 4px;
+    width: 220px;
+    &:hover {
+      background: @form-input-hover-bg;
+    }
+  }
+  .input--field {
+     line-height: 29px;
+     margin-bottom: 33px;
+  }
+  .input--textarea {
+    margin-bottom: 18px;
+    min-height: 108px;
+    overflow: auto;
+  }
+  .form-union {
+    margin-bottom: 8px;
+  }
+  .form-button {
+    background: @main-color;
+    border: 0;
+    border-radius: 2px;
+    text-transform: capitalize;
+    color: @navigation-links-hover-color;
+    padding: 13px 17px;
+    margin-right: 9px;
+    font-weight: 600;
+    .em-size(15, 14);
+    &:hover {
+      background: @button-hover-bg;
+    }
+  }
+  //see formJFC for more form styles...
+
+
+
+
+

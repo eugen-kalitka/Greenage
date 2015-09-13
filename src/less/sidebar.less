@@ -1,0 +1,34 @@
+.sidebar {
+  background: @content-background-color;
+  margin-top: 40px;
+}
+  .sidebar__header {
+    font-family: @headings-font;
+    background: @main-color;
+    color: @navigation-links-hover-color;
+    margin: 0;
+    padding: 11px 19px 8px;
+    .em-size(16, 14);
+  }
+  .links-list {
+    padding: 27px 20px 54px;
+  }
+    .links-list__item {
+      display: block;
+      padding-bottom: 6px;
+      &:hover {
+        color: @content-links-hover;
+      }
+    }
+    .links-list__item--comment:hover {
+      color: @content-links-hover;
+    }
+    .links-list__item--disable {
+      color: @content-disabled-text
+    }
+  .links-list--expanded p {
+    margin-bottom: 7px;
+  }
+  .links-list:last-child {
+    padding-bottom: 40px;
+  }

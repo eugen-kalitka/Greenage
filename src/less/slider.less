@@ -1,0 +1,56 @@
+.container-fluid {
+  background: @main-color;
+}
+.carousel {
+  padding-top: 20px;
+  position: relative;
+  @media (min-width: @tablet) {
+    padding-top: 70px;
+  }
+  text-align: center;
+}
+  .carousel-indicators {
+    bottom: 25px;
+    margin-bottom: 0;
+    .carousel-indicators__item {
+      margin: 0 3px;
+      border: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: @slider-indicators-bg;
+      &.active {
+        background: @slider-indicators-hover-bg;
+      }
+    }
+ }
+  .carousel-inner__header {
+    margin: 0;
+    color: @navigation-links-hover-color;
+    font-family: @slider-headings-font;
+    .em-size(40, 14);
+    padding-bottom: 20px;
+  }
+  .carousel-inner__tagline {
+    color: @navigation-links-hover-color;
+    .em-size(15, 14);
+    padding-bottom: 35px;
+    @media(min-width: @tablet) {
+      width: 70%;
+      margin: auto;
+    }
+  }
+  .carousel-inner__link {
+    display: block;
+    text-transform: uppercase;
+    font-family: @secondary-font;
+    .em-size(15, 14);
+    margin-bottom: 50px;
+    color: @slider-link-color;
+    @media(min-width: @tablet) {
+      margin-bottom: 115px;
+    }
+    &:hover {
+      color: @navigation-links-hover-color;
+    }
+  }

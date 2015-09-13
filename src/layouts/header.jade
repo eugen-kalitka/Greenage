@@ -1,0 +1,48 @@
+header.page-header
+    .container.clearfix
+        h1.logo.pull-left
+            a(href="index.html") Greenage
+
+        .buttons-toggle-block.pull-right
+            button(
+                type="button",
+                class="pull-left navbar-toggle collapsed",
+                aria-controls="#primary-nav",
+                data-toggle="collapse",
+                data-target="#primaryNav"
+            )
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+
+            button(
+                class="pull-left navbar-toggle",
+                data-toggle="collapse",
+                data-target="#search"
+            )
+                i.fa.fa-search.fa-lg
+
+        .navigation-panel.pull-right.clearfix
+            ul(
+                id="primaryNav",
+                class="pull-left nav navbar-nav collapse navbar-collapse clearfix"
+            )
+                li: a(href="#") home
+                li
+                    a(href="#") about
+                    ul.dropdown
+                        li: a(href="#") Sub page
+                        li: a(href="#") Sub page
+                li: a(href="#") parent page
+                li.navigation-marker
+            form(
+                id="search",
+                action="#",
+                class="pull-left search-form collapse navbar-collapse"
+            )
+                .search-wrapper.clearfix
+                    input(type="text", placeholder="Enter search keyword")
+                    i.fa.fa-search
+
+
+

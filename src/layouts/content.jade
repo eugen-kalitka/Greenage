@@ -1,0 +1,149 @@
+.col-xs-12.col-sm-8.pull-right
+    .content
+        article.page-article.worth
+            h3.content-title.content-title-first.content-title-first--worth Worth A Thousand Words
+            p.text-minor Posted on
+                a(href="#", class="content-link")  17 May, 2013
+                |  in
+                a(href="#", class="content-link")  Uncategorized
+            iframe.video(
+                src="https://www.youtube.com/embed/olFEpeMwgHk",
+                frameborder="0",
+                allowfullscreen
+            )
+            p.text-minor.text-minor--italic Boat.
+            p Nulla facilisi. Mauris arcu ante, tincidunt malesuada vehicula at, euismod sed justo. Nulla facilis. Duis facilisis auctor erat, gravida pretium <span>sapien ullamcorper sit amet.</span> Morbi laoreet commodo nisi, et eleifend felis suscipit quis.
+            p.text-minor.text-minor--tags Tags:
+                a(href="#", class="content-link")  boat,
+                a(href="#", class="content-link")  lake
+        article.page-article.elements
+            h3.content-title.content-title-first.content-title-first--elements Elements
+            p The purpose of this HTML is to help determine what default settings are with CSS and to make sure that all possible HTML Elements are included in this HTML so as to not miss any possible Elements when designing a site.
+            hr.solid-divider
+            h1.decrease-header.decrease-header-1 Heading 1
+            h2.decrease-header.decrease-header-2 Heading 2
+            h3.decrease-header.decrease-header-3 Heading 3
+            h4.decrease-header.decrease-header-4 Heading 4
+            h5.decrease-header.decrease-header-5 Heading 5
+            h6.decrease-header.decrease-header-6 Heading 6
+            a(href="#", class="content-link top-link") [Top]
+        article.page-article.paragraph
+            h3.content-title.content-title-first.content-title-first--paragraph Paragraph
+            p.text-paragraph Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+            p.text-paragraph Lorem ipsum dolor sit amet, emphasis consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo
+            a(href="#", class="content-link top-link top-link--paragraph") [Top]
+        article.page-article.list-types
+            h3.content-title.content-title-first.content-title-first--list-types List Types
+            h4.content-title.content-title-secondary Definition List
+            dl.definition-list
+                dt.definition-term Definition List Title
+                dd.definition-description This is a definition list division.
+            h4.content-title.content-title-secondary Ordered List
+            ol.ordered-list
+                li.ordered-list__item List item 1
+                li.ordered-list__item List item 2
+                li.ordered-list__item List item 3
+            h4.content-title.content-title-secondary.content-title-secondary--unordered Unordered List
+            ul.unordered-list
+                li.unordered-list__item List item 1
+                li.unordered-list__item List item 2
+                li.unordered-list__item List item 3
+            a(href="#", class="content-link top-link top-link--list") [Top]
+        article.page-article.form
+            h3.content-title.content-title-first.content-title-first--forms Forms
+            p.text-forms Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.
+            h3.content-title.content-title-first.content-title-first--forms Form Element
+            p.text-forms Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.
+            form(
+                id="mainForm",
+                action="#",
+                method="post",
+                enctype="multipart/form-data"
+            )
+                label.text-forms.text-forms--label Text field:
+                input(
+                    type="text",
+                    value="",
+                    class="input input--field"
+                )
+                label.text-forms.text-forms--label Text area:
+                textarea.input.input--textarea
+                label.text-forms.text-forms--label Select element:
+                select(
+                    id="formSelect"
+                )
+                    optgroup(label="Option group 1")
+                        option Option 1
+                        option Option 2
+                    optgroup(label="Option group 2")
+                        option Option 1
+                label.text-forms.text-forms--label Radio Buttons:
+                fieldset.form-union
+                    label.text-forms.text-forms--inline
+                        input(
+                            type="radio",
+                            name="radio",
+                            value="radio1"
+                        )
+                        | Radio 1
+                    br
+                    label.text-forms.text-forms--inline
+                        input(
+                            type="radio",
+                            name="radio",
+                            value="radio2"
+                        )
+                        | Radio 2
+                    br
+                    label.text-forms.text-forms--inline
+                        input(
+                            type="radio",
+                            name="radio",
+                            value="radio3"
+                        )
+                        | Radio 3
+                    br
+                label.text-forms.text-forms--label.text-forms--checkboxes Checkboxes:
+                fieldset.form-union
+                    label.text-forms.text-forms--inline
+                        input(
+                        type="checkbox",
+                        name="checkbox",
+                        value="checkbox1"
+                        )
+                        | Checkbox 1
+                    br
+                    label.text-forms.text-forms--inline
+                        input(
+                            type="checkbox",
+                            name="checkbox",
+                            value="checkbox2"
+                        )
+                        | Checkbox 1
+                    br
+                    label.text-forms.text-forms--inline
+                        input(
+                            type="checkbox",
+                            name="checkbox",
+                            value="checkbox3"
+                        )
+                        | Checkbox 1
+                    br
+                label.text-forms.text-forms--label File input:
+                input(
+                    type="file"
+                )
+                input(
+                    type="reset",
+                    value="clear",
+                    class="form-button"
+                )
+                input(
+                    type="submit",
+                    value="submit",
+                    class="form-button"
+                )
+
+                a(href="#", class="content-link top-link") [Top]
+
+        article.page-article

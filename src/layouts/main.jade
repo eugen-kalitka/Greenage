@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="initial-scale=1.0, width=device-width")
+        meta(name="keywords", content="")
+        meta(name="description", content="")
+        title Greenage
+        link(href="css/styles.css", rel="stylesheet")
+    body
+        include header.jade
+        include slider.jade
+        .container.main
+            .row
+                include content.jade
+                include sidebar.jade
+
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        // build:js js/compilated.js
+        // bower:js
+        script(src='../../bower_components/jquery/dist/jquery.js')
+        script(src='../../bower_components/bootstrap/dist/js/bootstrap.js')
+        script(src='../../bower_components/jcf/js/jcf.js')
+        // endbower
+        script(src='../js/carouselEqHeight.js')
+        script(src='../js/customForm.js')
+        // endbuild
+
+
+

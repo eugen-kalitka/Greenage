@@ -1,0 +1,166 @@
+.text-forms--inline {
+  font-weight: normal;
+  margin-bottom: 3px;
+}
+//select
+.jcf-select {
+  background: @form-input-bg;
+  cursor: default;
+  border: @form-input-border;
+  border-radius: 3px;
+  padding: 8px;
+  width: 220px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin: 0 0 23px;
+  &:hover {
+    background: @form-input-hover-bg;
+  }
+}
+.jcf-reset-appearance {
+  top: 20px;
+}
+.jcf-list-content {
+  font-family: @headings-font;
+}
+.jcf-select-drop {
+  background: @input-background-color;
+  border: @form-input-border;
+  margin-top: 5px;
+  padding-top: 5px;
+}
+.jcf-select-drop ul {
+  list-style: none;
+  padding: 0;
+  cursor: default;
+  text-indent: 10px;
+}
+.jcf-optgroup-caption {
+  color: @input-text-color;
+  display: block;
+  padding: 5px 0 6px;
+}
+.jcf-optgroup ul {
+  text-indent: 29px;
+}
+.jcf-optgroup li{
+  padding: 5px 0;
+  &:hover {
+    background: @select-option-hover;
+    color: @navigation-links-hover-color;
+  }
+}
+//radio
+.jcf-radio {
+  height: 18px;
+  width: 18px;
+  background: @form-input-bg;
+  border: @form-input-border;
+  border-radius: 50%;
+  vertical-align: top;
+  display: inline-block;
+  position: relative;
+  margin: 0 8px 0 30px;
+}
+.jcf-radio input[type="radio"] {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  border: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+.jcf-radio span {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  top: 3px;
+  left: 3px;
+  position: absolute;
+}
+.jcf-radio.jcf-checked span {
+  background: @checked-flag;
+}
+.jcf-radio.jcf-pressed:active span {
+  background: @checked-flag;
+  opacity: 0.5;
+}
+//checkboxes
+.jcf-checkbox {
+  height: 18px;
+  width: 18px;
+  background: @form-input-bg;
+  border: @form-input-border;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin: 0 8px 0 30px;
+}
+.jcf-checkbox input[type="radio"] {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  border: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+.jcf-checkbox span {
+  position: absolute;
+  height: 8px;
+  width: 12px;
+  top: 1px;
+  left: 3px;
+  transform: rotate(-45deg);
+  border: solid transparent;
+  border-width: 0 0 3px 3px;
+}
+.jcf-checkbox.jcf-checked span {
+  border: solid @checked-flag;
+  border-width: 0 0 3px 3px;
+}
+.jcf-checkbox.jcf-pressed:active span {
+  border: solid @checked-flag;
+  border-width: 0 0 3px 3px;
+  opacity: 0.5;
+}
+//file
+.jcf-file {
+  width: 460px;
+  height: 70px;
+  background: @file-bg;
+  border-radius: 2px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 11px 9px 10px;
+  margin-bottom: 9px;
+}
+  .jcf-upload-button {
+    background: @form-input-hover-bg;
+    border: @file-border;
+    float: left;
+    width: 140px;
+    height: 49px;
+    padding: 13px 10px;
+    margin-right: 20px;
+    @media (min-width: @tablet) {
+      width: 222px;
+    }
+  }
+  .jcf-fake-input {
+    display: inline-block;
+    padding-top: 13px;
+  }
+  .jcf-real-element {
+    width: 140px;
+    height: 49px;
+    top: 11px;
+    @media (min-width: @tablet) {
+      width: 222px;
+    }
+  }

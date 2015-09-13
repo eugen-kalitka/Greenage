@@ -1,0 +1,28 @@
+.container-fluid
+    div(
+        id="mainSlider",
+        class="container carousel slide",
+        data-ride="carousel"
+    )
+        // indicators
+        ol.carousel-indicators
+            li(data-target="#mainSlider", data-slide-to="0", class="carousel-indicators__item active")
+            li(data-target="#mainSlider", data-slide-to="1", class="carousel-indicators__item")
+            li(data-target="#mainSlider", data-slide-to="2", class="carousel-indicators__item")
+
+        //slides
+        .carousel-inner#carouselInner
+            .item.active
+                h2.carousel-inner__header Hand-made websites from great guys!
+                .carousel-inner__tagline Aliquam vehicula libero sed mauris sagittis sit amet laoreet lacus adipiscing. uisque velit odio, mollis sit amet elementum sit amet, lobortis sed mauris.
+                a(href="#", class="carousel-inner__link") Learn more
+            .item
+                h2.carousel-inner__header Lorem ipsum dolor sit amet
+                .carousel-inner__tagline Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                a(href="#", class="carousel-inner__link") Learn more
+            .item
+                h2.carousel-inner__header There are many variations...
+                .carousel-inner__tagline It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                a(href="#", class="carousel-inner__link") Learn more
+
+

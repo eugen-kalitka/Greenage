@@ -1,0 +1,146 @@
+.page-header {
+  background: @header-background-color;
+  border: none;
+  margin: 0;
+  padding: 0;
+  .clearfix();
+}
+.page-header > .container {
+  margin-top: 10px;
+}
+.logo {
+  color: @main-color;
+  margin-top: 10px;
+  font-family: @headings-font;
+  font-weight: 900;
+  text-transform: uppercase;
+  .em-size(18, 14);
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.buttons-toggle-block {
+  .navbar-toggle {
+    margin: 0;
+    border: none;
+  }
+  .icon-bar {
+    background: @navigation-links-hover-color;
+  }
+  .fa-search {
+    color: @navigation-links-hover-color;
+    text-shadow: 2px 1px 0 rgba(0, 0, 0, 1);
+    vertical-align: top;
+  }
+}
+
+.navigation-panel {
+  transition: 300ms;
+  @media (max-width: @tablet) {
+    clear: both;
+    width: 100%;
+  }
+  .navbar-collapse {
+    box-shadow: none;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    @media (max-width: @tablet) {
+      width: 100%;
+    }
+  }
+  .nav a {
+    text-transform: uppercase;
+    color: @navigation-links-color;
+    padding: 11px 18px;
+    font-family: @headings-font;
+    font-weight: 300;
+    .em-size(13, 14);
+    &:hover {
+      color: @navigation-links-hover-color;
+      background: none;
+      @media (max-width: @tablet) {
+        background: @main-color;
+      }
+    }
+  }
+  .dropdown {
+    list-style: none;
+    transition: 400ms;
+    @media (min-width: @tablet) {
+      visibility: hidden;
+      padding: 0;
+      position: absolute;
+      top: 52px;
+      left: -23px;
+      z-index: 10;
+      & li {
+        background: @dropdown-nav-color;
+        width: 220px;
+        &:hover {
+          background: @header-background-color;
+        }
+      }
+      & a {
+        text-transform: capitalize;
+        padding: 18px 100px 10px 15px;
+      }
+    }
+    a {
+      display: block;
+      width: auto;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.navigation-marker {
+  position: absolute !important;
+  height: 4px;
+  width: 71px;
+  background: @main-color;
+  bottom: -9px;
+  left: 0;
+  @media (max-width: @tablet) {
+    display: none !important;
+  }
+}
+
+.navbar-nav li:hover .dropdown {
+  visibility: visible;
+}
+
+.search-wrapper {
+  color: @input-text-color;
+  background: @input-background-color;
+  margin-left: 35px;
+  margin-bottom: 12px;
+  padding: 0;
+  width: 240px;
+  .em-size(14, 14);
+  @media (max-width: @tablet) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  input {
+    padding: 9px 0 9px 10px;
+    border: none;
+    float: left;
+    &:focus {
+      outline: none;
+    }
+  }
+  .fa-search {
+    cursor: pointer;
+    float: right;
+    margin-top: 12px;
+    margin-right: 14px;
+    font-size: 12px;
+  }
+}
+
