@@ -18,6 +18,15 @@
     background: @form-input-hover-bg;
   }
 }
+.jcf-select-opener {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 26px;
+  height: 37px;
+  background: url(../img/spritesheet.png) -30px 0 no-repeat;
+  .retina-img('../img/spritesheet@2x.png', -30px, 0, 56px, 47px);
+}
 .jcf-reset-appearance {
   top: 20px;
 }
@@ -148,6 +157,7 @@
     height: 49px;
     padding: 13px 10px;
     margin-right: 20px;
+    position: relative;
     @media (min-width: @tablet) {
       width: 222px;
     }
@@ -163,4 +173,13 @@
     @media (min-width: @tablet) {
       width: 222px;
     }
+  }
+  .jcf-file-arrow {
+    position: absolute;
+    right: 2px;
+    top: 0;
+    background: url(../img/spritesheet.png) 0 0 no-repeat;
+    width: 30px;
+    height: 47px;
+    .retina-img('../img/spritesheet@2x.png', 0, 0, 56px, 47px);
   }

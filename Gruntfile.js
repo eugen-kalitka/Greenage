@@ -70,11 +70,26 @@ module.exports = function(grunt) {
             html: ["build/index.html"]
         },
         copy: {
+            image: {
+                expand: true,
+                cwd: "src/img/",
+                src: ["*.png"],
+                dest: "build/img/"
+            },
             fonts: {
                 expand: true,
                 cwd: "src/fonts/",
                 src: ["*"],
                 dest: "build/fonts/"
+            }
+        },
+        sprite: {
+            default: {
+                src: ["src/img/raw/fileArrow*.png", "src/img/raw/selectArrow*.png"],
+                retinaSrcFilter: ['src/img/raw/*@2x.png'],
+                dest: 'src/img/spritesheet.png',
+                retinaDest: 'src/img/spritesheet@2x.png',
+                destCss: 'src/css/spritesheet.css'
             }
         },
         clean: {
@@ -113,6 +128,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-usemin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-express');
+    grunt.loadNpmTasks('grunt-spritesmith');
 
     grunt.registerTask('server', 'Start a custom web server.', function() {
         require('./server.js');
@@ -127,6 +143,7 @@ module.exports = function(grunt) {
         'concat',
         'uglify',
         'usemin',
+        'sprite',
         'copy',
         'server',
         'watch'
