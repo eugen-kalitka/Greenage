@@ -9,8 +9,6 @@
   margin-top: 10px;
 }
 .logo {
-  color: @main-color;
-  margin-top: 10px;
   font-family: @headings-font;
   font-weight: 900;
   text-transform: uppercase;
@@ -19,6 +17,10 @@
     color: white;
     text-decoration: none;
   }
+}
+.logo--main {
+  margin-top: 10px;
+  color: @main-color;
 }
 
 .buttons-toggle-block {
@@ -33,6 +35,12 @@
     color: @navigation-links-hover-color;
     text-shadow: 2px 1px 0 rgba(0, 0, 0, 1);
     vertical-align: top;
+  }
+}
+
+.navbar-nav {
+  @media (max-width: @tablet) {
+    margin: 0;
   }
 }
 

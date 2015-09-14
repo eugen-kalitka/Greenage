@@ -14,6 +14,9 @@
     height: 5px;
     border-bottom: 5px dashed @articles-divider-color;
   }
+  &:last-child:after {
+    visibility: hidden;
+  }
 }
   .content-title {
     margin: 0;
@@ -39,6 +42,7 @@
   }
   .text-minor {
     color: @content-disabled-text;
+    .em-size(14, 14);
   }
   .text-minor--italic {
     font-style: italic;
@@ -95,11 +99,11 @@
     margin-bottom: 10px;
     font-weight: 600;
   }
-  .text-paragraph {
+  .text {
     line-height: 21px;
-    &:first-of-type {
+  }
+  .text--paragraph:first-of-type {
       margin-bottom: 20px;
-    }
   }
   .top-link--paragraph {
     margin-top: 18px;
@@ -210,8 +214,39 @@
     }
   }
   //see formJFC for more form styles...
-
-
-
-
-
+  //misc
+  .misc {
+    padding-right: 50px;
+  }
+  .content-title-first--misc {
+    margin-top: 18px;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+  .text--misc {
+    margin-bottom: 16px;
+  }
+  .text-minor--sup {
+  }
+  .text-minor--sub {
+    bottom: -0.5em;
+  }
+  .text-code {
+    border: @monospace-text-border;
+    padding: 15px 20px 13px;
+    margin-bottom: 28px;
+    font-family: @monospace-font;
+    .em-size(13, 14);
+    line-height: 21px;
+  }
+  .text-blockquote {
+    background: @background-color;
+    border-left: 10px solid @main-color;
+    width: 100%*(358/542);
+    padding: 8px 20px 10px 10px;
+    line-height: 21px;
+    .em-size(13, 14);
+  }
+  .top-link--misc {
+    padding-bottom: 10px;
+  }
