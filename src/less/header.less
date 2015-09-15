@@ -13,9 +13,9 @@
   font-weight: 900;
   text-transform: uppercase;
   .em-size(18, 14);
-  a:hover {
+  a:hover,
+  a:focus {
     color: white;
-    text-decoration: none;
   }
 }
 .logo--main {
@@ -67,7 +67,8 @@
     font-family: @headings-font;
     font-weight: 300;
     .em-size(13, 14);
-    &:hover {
+    &:hover,
+    &:focus {
       color: @navigation-links-hover-color;
       background: none;
       @media (max-width: @tablet) {
@@ -100,9 +101,6 @@
     a {
       display: block;
       width: auto;
-      &:hover {
-        text-decoration: none;
-      }
     }
   }
 }
@@ -149,6 +147,9 @@
     margin-top: 12px;
     margin-right: 14px;
     font-size: 12px;
+    &:hover {
+      color: @search-icon-hover;
+    }
   }
 }
 

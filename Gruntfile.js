@@ -51,7 +51,8 @@ module.exports = function(grunt) {
                     "bower_components/jcf/js/jcf.checkbox.js",
                     "bower_components/jcf/js/jcf.file.js",
                     "src/js/carouselEqHeight.js",
-                    "src/js/customForm.js"
+                    "src/js/customForm.js",
+                    "src/js/slowTop.js"
                 ],
                 dest: "build/js/compilated.js"
             }

@@ -1,30 +1,20 @@
-(function(){
-    function eqHeight(parent_id) {
-        var child = document.getElementById(parent_id).children,
-            childAmount = child.length,
-            boxHeight = 0,
-            i = childAmount - 1;
+(function($){
+    function setCarouselHeight(id) {
+        var slideHeight = [];
+        $(id+' .item').each(function()
+        {
+            // add all slide heights to an array
+            slideHeight.push($(this).height());
+        });
 
-        // Find the greatest height
-        for(; i >= 0; i--) {
-            if(child[i].offsetHeight && child[i].offsetHeight > boxHeight) {
-                child[i].style.height = '';
-                boxHeight = child[i].offsetHeight;
-            }
-        }
-        // Apply the greatest height to all child elements while accounting for padding and borders
-        for(; i >= 0; i--) {
-            if(child[i].offsetHeight) {
-                child[i].style.height = boxHeight + 'px';
-            }
-            if(child[i].offsetHeight > boxHeight) {
-                child[i].style.height = boxHeight - (child[i].offsetHeight - child[i].clientHeight) + 'px';
-                child[i].style.height = boxHeight - ((child[i].offsetHeight - boxHeight) + (child[i].offsetHeight - child[i].clientHeight)) + 'px';
-            }
-        }
+        // find the tallest item
+        max = Math.max.apply(null, slideHeight);
+
+        // set the slide's height
+        $(id+' .item').each(function()
+        {
+            $(this).css('height',max+'px');
+        });
     }
-    eqHeight('carouselInner');
-    window.onresize = function() {
-        eqHeight('carouselInner');
-    }
-})();
+    setCarouselHeight('#mainSlider');
+})(jQuery);
