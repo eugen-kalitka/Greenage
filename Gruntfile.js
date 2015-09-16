@@ -149,4 +149,18 @@ module.exports = function(grunt) {
         'server',
         'watch'
     ]);
+
+    grunt.registerTask('heroku:production', [
+        'clean',
+        'wiredep',
+        'jade',
+        'useminPrepare',
+        'less',
+        'concat',
+        'uglify',
+        'usemin',
+        'sprite',
+        'copy',
+        'server'
+    ]);
 };
