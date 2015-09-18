@@ -7,6 +7,11 @@ html(lang="en")
         meta(name="description", content="")
         title Greenage
         link(href="css/styles.css", rel="stylesheet")
+        <!--[if lt IE 9]>
+        <link href="css/ie8.css" rel="stylesheet"></link>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
     body
         include header.jade
         include slider.jade
@@ -16,10 +21,6 @@ html(lang="en")
                 include sidebar.jade
         include footer.jade
 
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
         script(src="http://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js")
         // build:js js/compilated.js
         // bower:js
@@ -31,6 +32,3 @@ html(lang="en")
         script(src='../js/customForm.js')
         script(src='../js/slowTop.js')
         // endbuild
-
-
-

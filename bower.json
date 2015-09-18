@@ -15,7 +15,8 @@
   "dependencies": {
     "bootstrap": "~3.3.5",
     "font-awesome": "~4.4.0",
-    "jcf": "~1.2.0"
+    "jcf": "~1.2.0",
+    "jquery": "jQuery#1.11.2"
   },
   "resolutions": {
     "jquery": ">= 1.9.1"

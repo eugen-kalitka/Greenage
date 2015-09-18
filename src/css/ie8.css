@@ -1,0 +1,32 @@
+.navigation-panel .nav a, 
+.carousel-inner__link {
+	color: #fff;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+}
+@media (min-width: 768px) {
+	.navigation-panel .dropdown {
+		top: 40px !important;
+	}
+}
+
+
+.carousel-indicators .carousel-indicators__item {
+	background: #dfebd6;
+}
+.carousel-indicators .carousel-indicators__item.active {
+	background: #c3ccbb;
+}
+
+#mainSlider .carousel-indicators__item,
+#mainForm .jcf-radio,
+#mainForm .jcf-checkbox {
+	position: relative;
+	behavior: url(pie/PIE.htc);
+}
+
+#mainForm .jcf-checkbox span {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678,sizingMethod='auto expand')";
+}
+input[type="file"] {
+	margin-bottom: 20px;
+}

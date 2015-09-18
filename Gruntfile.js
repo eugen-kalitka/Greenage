@@ -71,6 +71,12 @@ module.exports = function(grunt) {
             html: ["build/index.html"]
         },
         copy: {
+            iecss: {
+                expand: true,
+                cwd: "src/css/",
+                src: ["ie8.css"],
+                dest: "build/css/"
+            },
             image: {
                 expand: true,
                 cwd: "src/img/",
@@ -82,6 +88,12 @@ module.exports = function(grunt) {
                 cwd: "src/fonts/",
                 src: ["*"],
                 dest: "build/fonts/"
+            },
+            pie: {
+                expand: true,
+                cwd: "src/pie/",
+                src: ["*"],
+                dest: "build/pie/"
             }
         },
         sprite: {
@@ -111,6 +123,10 @@ module.exports = function(grunt) {
             styles: {
                 files: 'src/less/*.less',
                 tasks: ['less']
+            },
+            iestyles: {
+                files: 'src/css/*.css',
+                tasks: ['copy:iecss']
             }
         }
 

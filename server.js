@@ -19,6 +19,9 @@ var respond = function (file, res) {
         case "ico":
             contentType = "image/ico";
             break;
+        case "htc":
+            contentType = "text/x-component";
+            break;
         default:
             contentType = "text/plain";
     }
